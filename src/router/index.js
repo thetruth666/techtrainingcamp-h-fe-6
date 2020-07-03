@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Home from '../views/Home.vue'
-import Rule from '../views/Rule.vue'
-import God from '../views/God.vue'
-import Player from '../views/Player.vue'
-import Rank from '../views/Rank.vue'
-import Result from '../views/Result.vue'
-import Room from '../views/Room.vue'
+import Home from '../views/Home'
+import Rule from '../views/Rule'
+import God from '../views/God'
+import Player from '../views/Player'
+import Rank from '../views/Rank'
+import Result from '../views/Result'
+import Room from '../views/Room'
 
 Vue.use(VueRouter)
 
@@ -47,10 +47,10 @@ Vue.use(VueRouter)
     name: 'Room',
     component: Room
   },
-]
+];
 
 const router = new VueRouter({
   routes
-})
+});
 
 export default router

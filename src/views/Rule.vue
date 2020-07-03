@@ -7,7 +7,25 @@
 猎人：如果猎人死掉，临死前可以进行射击，指定任意一个活着的玩家，该玩家立即死掉（被放逐出局的猎人带掉的玩家有遗言，被砍死的猎人只有首夜吃刀的猎人带掉的人有遗言）。
 守卫：每晚可以指定一名玩家进行守护，可以自守，不可连续守卫同一个人。同守同救直死。
 村民：没有任何特殊能力，天黑时适中闭着眼。
-狼人：天黑时睁眼，杀一个人。</div>
+狼人：天黑时睁眼，杀一个人。
+      </div>
+        <el-button @click="back">返回</el-button>
     </el-card>
   </div>
 </template>
+
+<script>
+export default {
+    name:'Rule',
+    data() {
+        return {
+            model: {},
+        };
+    },
+    methods: {
+        back(){
+          this.$router.push('/');
+        },
+    },
+};
+</script>
