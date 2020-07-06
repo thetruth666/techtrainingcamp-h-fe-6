@@ -15,9 +15,9 @@
         </el-form-item>
       </el-form>
       <div class="info">
-<!--      todo: refactor button sytle-->
-        <el-button @click ="gotoRule">游戏规则说明</el-button>
-<!--        <el-link type="info" href="/rule">游戏规则说明</el-link>-->
+        <!--      todo: refactor button sytle-->
+        <el-button @click="gotoRule">游戏规则说明</el-button>
+        <!--        <el-link type="info" href="/rule">游戏规则说明</el-link>-->
       </div>
     </el-card>
   </div>
@@ -25,24 +25,24 @@
 
 <script>
 export default {
-  name:'Home',
+  name: "Home",
   data() {
     return {
-      model: {},
+      model: {}
     };
   },
   methods: {
-    gotoRule(){
-      this.$router.push('/rule')
+    gotoRule() {
+      this.$router.push("/rule");
     },
     enterTheGame() {
       console.log(this.model);
-    },
-  },
+    }
+  }
 };
 </script>
 
-<style>
+<style scoped>
 .home-card {
   width: 20rem;
   margin: 6rem auto;
